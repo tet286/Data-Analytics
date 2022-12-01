@@ -14,6 +14,7 @@ The code doesn’t wait for any input via stdin as the macro INTERVAL could be c
 
 # Cubic Splice:
 Splines are piecewise polynomial functions to interpolate points (xi, yi). In particular, cubic splines can be represented as
+
 f(x) = ai + bi (x-xi) + ci (x-xi)2 + di (x-xi)3, for all x in [xi, xi+1)
 f(xi)=yi
 
@@ -37,9 +38,6 @@ this function can only be called after set_points(...) has been called
 it will break C2 if the original spline was C2 and not already monotonic
 it will break boundary conditions if it was not monotonic in the first or last segment
 
-
-
-
-References:
+References
 https://kluge.in-chemnitz.de/opensource/spline/
 https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/
